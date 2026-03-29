@@ -1,1 +1,40 @@
-theme: jekyll-theme-cayman
+# Configuración del sitio
+title: Mi Blog
+description: Blog personal migrado de WordPress a GitHub Pages
+url: "https://mllorcag.github.io"
+baseurl: ""
+
+# Información del autor
+author:
+  name: mllorcag
+  email: ""
+
+# Configuración de Jekyll
+theme: minima
+lang: es
+
+# Plugins compatibles con GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Configuración de posts
+permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Configuración de collections
+collections:
+  pages:
+    output: true
+
+# Archivos y carpetas a excluir del build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - MIGRATION.md
+  - README.md
